@@ -1,0 +1,16 @@
+{
+  "name": "packages",
+  "version": "1.0.0",
+  "description": "node-sass and bootstrap-5",
+  "main": "index.js",
+  "scripts": {
+    "compile:css": "node-sass -o ./static_compiled/css scss",
+    "compile:css:watch": "node-sass -o ./static_compiled/css scss --watch"
+  },
+  "author": "Brendan Barnett",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta2",
+    "node-sass": "^5.0.0"
+  }
+}

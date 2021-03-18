@@ -1,0 +1,258 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$bgcolor: #181818;
+$concolor: #2A2C2D;
+$textcolor: #D3D4D4;
+$textcolor2: #e6e7e7;
+$textcolor3: #818484;
+$titlecolor: #C3CDD0;
+$titlecolor2: #F2F5F5;
+$buttoncolor: #4861B7;
+$buttoncolor2: #6F82C6;
+$buttoncolor3: #949798;
+$buttoncolor4: #AEB0B1;
+$inputcolor: #C8C9C9;
+$inputcolor2: #E3E3E3;
+$bordercolor: #46484A;
+
+body {
+    background-color: $bgcolor;
+}
+aside {
+    background-color: $bgcolor;
+    #top-nav {
+        justify-content: center;
+        #logo {
+            width: 40px;
+        }
+    }
+    #left-nav {
+        justify-content: center;
+        padding-left: 12px;
+        padding-right: 12px;
+        .bi-person, .bi-bookmarks, .bi-bell {
+            width: 2.3rem;
+            height: 2.3rem;
+            margin-top: 2px;
+            color: $titlecolor;
+            &:hover {
+                color: $titlecolor2;
+            }
+        }
+    }
+    #right-nav {
+        justify-content: end;
+        padding-left: 0;
+        padding-right: 15px;
+        .nav-title {
+            color: $titlecolor;
+            margin-top: 5px;
+            &:hover {
+                color: $titlecolor2;
+            }
+        }
+    }
+}
+main {
+    background-color: $bgcolor;
+    #main-con {
+        background-color: $bgcolor;
+        border: $bordercolor 1px solid;
+        #home-con {
+            padding: 2px;
+            border-bottom: $bordercolor 1px solid;
+            #home-text {
+                color: $titlecolor;
+            }
+        }
+        #message-con {
+            background-color: $bgcolor;
+            border-bottom: $bordercolor 1px solid;
+            padding: 5px;
+            #input-message {
+                background: transparent;
+                border: none;
+                color: $textcolor;
+                &:focus {
+                    border: none;
+                }
+            }
+            #btn-message {
+                background-color: $buttoncolor;
+                margin-left: 2px;
+                color: $textcolor;
+                margin-top: 10px;
+                border: none;
+                &:hover:focus {
+                    background-color: #6F82C6;
+                    border: $buttoncolor .5px solid;
+                }
+            }
+        }
+        #content-con {
+            .list-group-flush {
+                .list-group-item {
+                    background-color: $bgcolor;
+                    border-color: $bordercolor;
+                    .list-title {
+                        color: $textcolor2;
+                        .list-title-user {
+                            color: $textcolor2;
+                        }
+                        .list-title-time {
+                            color: $textcolor2;
+                        }
+                    }
+                    .list-text {
+                        color: $textcolor;
+                    }
+                    .bi {
+                        color: $textcolor2;
+                        margin-left: 2px;
+                    }
+                }
+            }
+        }
+    }
+    .user-con {
+        background-color: $concolor;
+        padding-left: 2px;
+        padding-right: 2px;
+        border: $bordercolor 1px solid;
+        border-radius: 10px;
+        height: 550px;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        .user-list {
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            .user-row {
+                border-bottom: $bordercolor 1px solid;
+                .button-col {
+                    margin-top: 5px;
+                    text-align: center;
+                }
+                .list-title {
+                    color: $textcolor2;
+                    margin-bottom: 0;
+                    margin-top: 5px;
+                }
+                .list-user {
+                    color: $textcolor2;
+                    margin-bottom: 5px;
+                }
+                .sidebar-button {
+                    font-size: 10px;
+                    border-radius: 10px;
+                    margin-top: 8px;
+                    background-color: $buttoncolor;
+                    color: $textcolor;
+                    &:hover {
+                        background-color: $buttoncolor2;
+                    }
+                    &:focus {
+                        box-shadow: 0px 0px 2px 0.05rem $buttoncolor2;
+                    }
+                    .btn-check:focus {
+                        box-shadow: 0px 0px 2px 0.05rem $buttoncolor2;
+                    }
+                }
+            }
+        }
+    }
+}
+.bi-arrow-left {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 2.3rem;
+    height: 2.3rem;
+    color: $buttoncolor;
+    &:hover {
+        color: $buttoncolor2;
+    }
+}
+#profile-fn-title {
+    margin-top: 5px;
+    color: $titlecolor;
+    padding-left: 15px;
+}
+.profile-con {
+    border-bottom: $bordercolor 1px solid;
+    .profile-name {
+        margin-top: 5px;
+        color: $titlecolor;
+    }
+    .profile-username {
+        color: $textcolor3;
+    }
+    .profile-bio {
+        color: $textcolor;
+    }
+    .profile-date {
+        color: $textcolor3;
+        .bi-calendar3 {
+            color: $textcolor3;
+            height: 1rem;
+        }
+    }
+    .profile-following {
+        color: $textcolor3;
+    }
+    .profile-follower {
+        color: $textcolor3;
+    }
+    .profile-follow-count {
+        color: $titlecolor2;
+    }
+}
+.profile-form-con {
+    background-color: $bgcolor;
+    border-bottom: $bordercolor 1px solid;
+    margin-bottom: 10px;
+    .profile-title-row {
+        text-align: center;
+        .profile-form-title {
+            color: $titlecolor;
+        }
+    }
+    .profile-form-fn {
+        color: $textcolor;
+    }
+    .profile-form-ln {
+        color: $textcolor;
+    }
+    .profile-form-username {
+        color: $textcolor;
+    }
+    .profile-form-location {
+        color: $textcolor;
+    }
+    .profile-form-bio {
+        color: $textcolor;
+    }
+    .form-control {
+        background-color: $inputcolor;
+        border: 2px solid $inputcolor2;
+        &:hover {
+            background-color: $inputcolor2;
+        }
+    }
+    .profile-but-con {
+        text-align: center;
+        padding: 0;
+        .profile-button {
+            background-color: $buttoncolor;
+            padding: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            margin-top: 10px;
+            &:hover {
+                background-color: $buttoncolor2;
+            }
+        }
+    }
+}

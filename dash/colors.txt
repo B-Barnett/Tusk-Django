@@ -1,0 +1,8 @@
+Bluegrey (buttons or links) #4861B7
+grey(containers) #3b3938
+darkbluegrey #1b1f22
+darkgrey(body) #181818
+text color #D3D4D4
+title color #C3CDD0
+border color #46484A
+input color #DFE0E0

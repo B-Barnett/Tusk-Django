@@ -1,0 +1,68 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$bgcolor: #181818;
+$concolor: #2A2C2D;
+$textcolor: #D3D4D4;
+$textcolor2: #e6e7e7;
+$titlecolor: #C3CDD0;
+$buttoncolor: #4861B7;
+$buttoncolor2: #6F82C6;
+$buttoncolor3: #949798;
+$buttoncolor4: #AEB0B1;
+$inputcolor: #C8C9C9;
+$inputcolor2: #E3E3E3;
+$bordercolor: #46484A;
+
+body {
+    background-color: $bgcolor;
+}
+#image {
+    margin: 10px;
+    margin-left: 0;
+    width: 75px;
+    padding: 10px;
+}
+.card-custom {
+    padding: 3px;
+    background-color: $bgcolor;
+    .card-body {
+        text-align: center;
+        border-radius: 10px;
+        border: $bordercolor 1px solid;
+        background-color: $concolor;
+        height: 200px;
+        .card-title {
+            @include media-breakpoint-down(md) {
+                font-size: rfs-fluid-value(1.5rem);
+            }
+            color: $titlecolor;
+        }
+        .card-text {
+            @include media-breakpoint-down(sm) {
+                font-size: rfs-fluid-value(.75rem);
+            }
+            color: $textcolor;
+        }
+        .prim-button {
+            @include media-breakpoint-down(sm) {
+                font-size: rfs-fluid-value(.75rem);
+            }
+            background-color: $buttoncolor;
+            margin-top: 15px;
+            &:hover {
+                background-color: $buttoncolor2;
+            }
+        }
+        .sec-button {
+            @include media-breakpoint-down(sm) {
+                font-size: rfs-fluid-value(.75rem);
+            }
+            background-color: $buttoncolor3;
+            margin-top: 15px;
+            font-size: 14px;
+            &:hover {
+                background-color: $buttoncolor4;
+            }
+        }
+    }
+}

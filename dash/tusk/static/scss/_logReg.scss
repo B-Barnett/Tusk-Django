@@ -1,0 +1,61 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$bgcolor: #181818;
+$concolor: #2A2C2D;
+$textcolor: #D3D4D4;
+$textcolor2: #e6e7e7;
+$titlecolor: #C3CDD0;
+$buttoncolor: #4861B7;
+$buttoncolor2: #6F82C6;
+$buttoncolor3: #949798;
+$buttoncolor4: #AEB0B1;
+$inputcolor: #C8C9C9;
+$inputcolor2: #E3E3E3;
+$bordercolor: #46484A;
+
+body {
+    background-color: $bgcolor;
+}
+#image {
+    margin: 10px;
+    margin-left: 0;
+    width: 75px;
+    padding: 10px;
+}
+.log-reg-con{
+    text-align: center;
+    background-color: $concolor;
+    border: $bordercolor solid 1px;
+    border-radius: 10px;
+    .title{
+        color: $titlecolor;
+        text-align: center;
+        font-weight: bold;
+    }
+    .form-control {
+        background-color: $inputcolor;
+        border: 2px solid $inputcolor2;
+        &:hover {
+            background-color: $inputcolor2;
+        }
+    }
+    .form-label {
+        color: $titlecolor;
+    }
+    .prim-button{
+        background-color: $buttoncolor;
+        margin-top: 15px;
+        &:hover {
+            background-color: $buttoncolor2;
+        }
+    }
+    .sec-button{
+        background-color: $buttoncolor3;
+        margin-top: 10px;
+        font-size: 12px;
+        margin-bottom: 15px;
+        &:hover {
+            background-color: $buttoncolor4;
+        }
+    }
+}
