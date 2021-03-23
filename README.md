@@ -7,10 +7,10 @@
 ## Setup
 
 Download project
-cd into static
-npm install
+* cd into static
+* npm install
 
-Dependencies for venv
-Django
-libsass
-nodejs
+Dependencies for venv:
+* Django
+* libsass
+* nodejs
